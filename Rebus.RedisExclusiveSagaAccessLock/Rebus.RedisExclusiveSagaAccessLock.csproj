@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net45;netstandard1.5</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="rebus" Version="5.0.0-b12" />
+    <PackageReference Include="stackexchange.redis" Version="1.2.6" />
+  </ItemGroup>
+</Project>

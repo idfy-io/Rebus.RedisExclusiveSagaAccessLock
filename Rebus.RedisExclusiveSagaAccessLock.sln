@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rebus.RedisExclusiveSagaAccessLock", "Rebus.RedisExclusiveSagaAccessLock\Rebus.RedisExclusiveSagaAccessLock.csproj", "{EC3CD77C-3D11-4FDB-93D4-A36EB1A4F142}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC3CD77C-3D11-4FDB-93D4-A36EB1A4F142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3CD77C-3D11-4FDB-93D4-A36EB1A4F142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3CD77C-3D11-4FDB-93D4-A36EB1A4F142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3CD77C-3D11-4FDB-93D4-A36EB1A4F142}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
