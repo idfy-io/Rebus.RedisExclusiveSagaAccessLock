@@ -29,7 +29,7 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-  - template: dotnet/build_individual_public_nuget_packages_custom_build_args.yaml@templates
+  - template: dotnet/build_individual_public_nuget_packages_specify_framework.yaml@templates
     parameters:
       projects:
         - Rebus.RedisExclusiveSagaAccessLock/Rebus.RedisExclusiveSagaAccessLock.csproj
