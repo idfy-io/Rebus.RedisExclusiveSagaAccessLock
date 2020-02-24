@@ -1,0 +1,35 @@
+# ASP.NET Core (.NET Framework)
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+name: $(majorMinorVersion).$(semanticVersion)
+
+trigger:
+  branches:
+    include:
+      - master
+  paths:
+    include:
+      - 'Rebus.RedisExclusiveSagaAccessLock/*'
+
+resources:
+  repositories:
+    - repository: templates
+      type: github
+      name: Signereno/devops_templates
+      endpoint: Idfy
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+variables:
+  majorMinorVersion: 1.1
+  semanticVersion: $[counter(variables['majorMinorVersion'], 0)]
+  buildConfiguration: 'Release'
+
+steps:
+  - template: dotnet/build_individual_projects.yml@templates
+    parameters:
+      projects:
+        - Rebus.RedisExclusiveSagaAccessLock/Rebus.RedisExclusiveSagaAccessLock.csproj
