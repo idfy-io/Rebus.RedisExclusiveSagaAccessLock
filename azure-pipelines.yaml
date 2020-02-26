@@ -33,4 +33,4 @@ steps:
     parameters:
       projects:
         - Rebus.RedisExclusiveSagaAccessLock/Rebus.RedisExclusiveSagaAccessLock.csproj
-      buildArgs: 'netcoreapp3.1'
+      buildArgs: 'netcoreapp3.1.101'
