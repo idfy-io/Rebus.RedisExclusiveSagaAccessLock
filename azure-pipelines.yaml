@@ -29,8 +29,7 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-  - template: dotnet/build_individual_public_nuget_packages_specify_framework.yaml@templates
+  - template: dotnet/build_individual_public_nuget_packages.yaml@templates
     parameters:
       projects:
         - Rebus.RedisExclusiveSagaAccessLock/Rebus.RedisExclusiveSagaAccessLock.csproj
-      buildArgs: 'netcoreapp3.1.101'
