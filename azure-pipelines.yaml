@@ -24,7 +24,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  majorMinorVersion: 1.1
+  majorMinorVersion: 2.0
   semanticVersion: $[counter(variables['majorMinorVersion'], 0)]
   buildConfiguration: 'Release'
 

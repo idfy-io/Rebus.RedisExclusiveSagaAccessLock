@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     <PackageVersion>1.0.1</PackageVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="rebus" Version="5.2.1" />
-    <PackageReference Include="stackexchange.redis" Version="2.0.519" />
+    <PackageReference Include="rebus" Version="6.1.0" />
+    <PackageReference Include="stackexchange.redis" Version="2.0.601" />
   </ItemGroup>
 </Project>
