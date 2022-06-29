@@ -11,3 +11,8 @@ Configure.With(SomeContainerAdapter)
 .Sagas(s => s.EnforceExclusiveAccess(redisLocker))
 .Start();
 ```
+
+
+## Testing
+- `docker-compose up`  (With docker-compose.yaml located in root of repo)
+- Run tests located in `Rebus.RedisExclusiveSagaAccessLock.Tests` using your favourite tool
